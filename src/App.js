@@ -1,23 +1,34 @@
-import logo from './logo.svg';
+import { useSelector } from 'react-redux';
+import { Route, Routes, useNavigate } from 'react-router-dom';
 import './App.css';
+import { LayoutApp } from './componets/Layout';
+import { Login } from './componets/Login';
+
+import { TabEntry } from './componets/TabEntry';
+import { TabletMaster } from './componets/TabletMaster';
+import Protected from './store/Protected';
 
 function App() {
+  const { isAuthenticate } = useSelector((state) => state.application);
+  console.log(isAuthenticate);
+  const navigate = useNavigate()
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Routes>
+        <Route path='/' element={<Login />} />
+        <Route element={<Protected isAuthenticate={isAuthenticate} />}>
+
+          <Route path='/Layout' element={<LayoutApp />}>
+
+            <Route path='/Layout/Tab' element={<TabEntry />} />
+
+            <Route path='/Layout/Master' element={<TabletMaster />} />
+
+          </Route>
+        </Route>
+
+
+      </Routes>
     </div>
   );
 }
