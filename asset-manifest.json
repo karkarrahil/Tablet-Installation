@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/Tablet-Installation/static/css/main.5018089e.css",
-    "main.js": "/Tablet-Installation/static/js/main.78581308.js",
+    "main.js": "/Tablet-Installation/static/js/main.4d6aff3a.js",
     "static/js/787.34d255be.chunk.js": "/Tablet-Installation/static/js/787.34d255be.chunk.js",
     "index.html": "/Tablet-Installation/index.html",
     "main.5018089e.css.map": "/Tablet-Installation/static/css/main.5018089e.css.map",
-    "main.78581308.js.map": "/Tablet-Installation/static/js/main.78581308.js.map",
+    "main.4d6aff3a.js.map": "/Tablet-Installation/static/js/main.4d6aff3a.js.map",
     "787.34d255be.chunk.js.map": "/Tablet-Installation/static/js/787.34d255be.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.5018089e.css",
-    "static/js/main.78581308.js"
+    "static/js/main.4d6aff3a.js"
   ]
 }
