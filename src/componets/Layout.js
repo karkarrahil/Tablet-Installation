@@ -1,7 +1,6 @@
 import React, { Children } from 'react'
 import { Button, Layout, Popover, Space } from 'antd'
 
-
 import { Divider, Menu } from 'antd'
 
 import { TabEntry } from './TabEntry';
@@ -72,12 +71,12 @@ export const LayoutApp = ({ children }) => {
                         bottom: '0',
                         color: 'white',
                         // padding: '10px',
-                        // background: 'white',
+                        // background: '#001529',
                         width: '500px'
 
                     }}>
 
-                        <Menu mode='inline' defaultSelectedKeys={'/Layout/Master'} items={items} onClick={({ key }) => Navigate(key)} />
+                        <Menu mode='inline'  defaultSelectedKeys={'/Layout/Master'} items={items} onClick={({ key }) => Navigate(key)} />
                     </Sider>
                 </div>
                 <Layout>

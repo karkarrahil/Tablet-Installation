@@ -11,7 +11,7 @@ import Protected from './store/Protected';
 function App() {
   const { isAuthenticate } = useSelector((state) => state.application);
   console.log(isAuthenticate);
-  const navigate = useNavigate()
+
   return (
     <div className="App">
       <Routes>

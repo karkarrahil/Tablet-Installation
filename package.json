@@ -1,8 +1,8 @@
 {
   "name": "magination-solution",
   "version": "0.1.0",
-  "private": true,
-  "homepage":"http://karkarrahil.github.io/Tablet-Installation",
+  "private": false,
+  "homepage": "https://karkarrahil.github.io/Tablet-Installation/",
   "dependencies": {
     "@ant-design/icons": "^4.8.0",
     "@reduxjs/toolkit": "^1.9.1",
